@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1>
+<button class="btn-secondart">
+    <%= link_to "Edit Article", edit_article_path(@article) %>
+</button>
+<p><%= @article.content %></p>
+<input type="checkbox" name="completed">
+<%= link_to "Back to Articles", articles_path %>

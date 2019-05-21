@@ -12,4 +12,5 @@ require 'faker'
     title: Faker::Games::HalfLife.character,
     content: Faker::Games::HalfLife.location
   )
-  article.save!
+  article.save
+end

@@ -1,0 +1,17 @@
+<h1>Edit Article</h1>
+<%= form_for(@article) do |t| %>
+  <div class="form-group" method="post">
+    <%= t.label :title %>
+    <%= t.text_field :title, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= t.label :content %>
+    <%= t.text_field :content, class: 'form-control' %>
+  </div>
+
+  <%= t.submit class: 'btn btn-primary' %>
+<% end %>
+<br>
+
+<%= link_to "Back to Articles", articles_path %>
